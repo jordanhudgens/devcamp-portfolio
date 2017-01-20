@@ -1,10 +1,9 @@
 <div class="col-sm-8 blog-main">
 
+    <%= paginate @blogs %>
+    
     <%= render @blogs %>
 
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
+    <%= paginate @blogs %>
 
 </div>
