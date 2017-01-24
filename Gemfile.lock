@@ -93,6 +93,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    gritter (1.2.0)
     i18n (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -234,6 +235,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.1, >= 2.1.2)
   font-awesome-rails (~> 4.7, >= 4.7.0.1)
   friendly_id (~> 5.1.0)
+  gritter (~> 1.2)
   jbuilder (~> 2.5)
   jquery-rails
   jquery-ui-rails (~> 6.0, >= 6.0.1)

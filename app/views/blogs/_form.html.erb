@@ -1,14 +1,8 @@
 <%= form_for(blog) do |f| %>
   <% if blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
-      <ul>
-      <% blog.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+    <% blog.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, title: "Jordan Hudgens Portfolio", sticky: false) %>
+    <% end %>
   <% end %>
 
   <div class="form-group">
