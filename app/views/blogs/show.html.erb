@@ -10,5 +10,7 @@
 
   <%= render 'comments/comment_form' %>
 
-  <%= render @blog.comments %>
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 </div>
