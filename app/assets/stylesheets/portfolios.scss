@@ -2,8 +2,19 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Lato';
+  src:font-url('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:font-url('RobotoSlab-Regular.ttf');
+}
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar {
@@ -34,6 +45,16 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .card {
