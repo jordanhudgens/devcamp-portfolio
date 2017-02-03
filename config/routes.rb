@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  mount ActionCable.server => '/cable'
+
   resources :topics, only: [:index, :show]
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
@@ -17,8 +20,6 @@ Rails.application.routes.draw do
       get :toggle_status
     end
   end
-
-  mount ActionCable.server => '/cable'
 
   root to: 'pages#home'
 end
