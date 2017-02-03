@@ -13,7 +13,6 @@
     <%= f.label :topic_id %>
     <%= f.collection_select(:topic_id, Topic.all, :id, :title,
                               {
-                                selected: blog.topic.id,
                                 include_blank: true
                               },
                               class: 'form-control'
