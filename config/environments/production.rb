@@ -35,7 +35,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Mount Action Cable outside main process or domain
-  config.action_cable.mount_path = nil
+  # config.action_cable.mount_path = nil
   config.web_socket_server_url = 'wss://devcamp-portfolio.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = ['https://devcamp-portfolio.herokuapp.com', 'http://devcamp-portfolio.herokuapp.com']
 
