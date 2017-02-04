@@ -16,9 +16,9 @@
 
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
-  <p class="blog-body">
+  <div class="blog-body">
     <%= markdown @blog.body %>
-  </p>
+  </div>
 
   <%= render 'comments/comment_form' %>
 
