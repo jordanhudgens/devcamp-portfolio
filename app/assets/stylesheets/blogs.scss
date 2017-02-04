@@ -203,3 +203,32 @@ h6, .h6 {
 .blog-sidebar-source {
   margin-top: 20px;
 }
+
+.blog-body img {
+  width: 100%;
+}
+
+.blog-body img[alt=xlarge] {
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=large] {
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=medium] {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=small] {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
