@@ -1,10 +1,11 @@
 <div class="blog-post">
-  <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
+  <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
   
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 
   <p>
-    <%= truncate(markdown(blog.body), length: 400, escape: false) { link_to "Continue reading", blog } %>
+    <%= truncate(markdown(blog.body), length: 600, escape: false) %>
+    <%= link_to "Continue reading", blog %>
   </p>
 </div>
