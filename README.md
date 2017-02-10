@@ -22,5 +22,5 @@ end
 
 
 ```javascript
-alert('Hi there');
+alert('Hi there, testing git hooks');
 ```
