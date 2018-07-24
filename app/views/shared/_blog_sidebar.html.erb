@@ -1,0 +1,26 @@
+<div class="col-sm-3 offset-sm-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset">
+    <h4>About Me</h4>
+    <p>
+      Teaching is both my passion and my best ally for mastery.
+    </p>
+  </div>
+
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
+  <div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <ol class="list-unstyled social-links">
+      <li><a href="https://github.com/jordanhudgens"><%= fa_icon "github" %></a></li>
+      <li><a href="https://www.instagram.com/jordanhudgens/"><%= fa_icon "instagram" %></a></li>
+      <li><a href="https://twitter.com/jordanhudgens"><%= fa_icon "twitter" %></a></li>
+    </ol>
+  </div>
+</div>

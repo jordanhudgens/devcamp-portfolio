@@ -1,0 +1,10 @@
+<div class="col-md-4">
+  <div class="card portfolio-box" data-id="<%= portfolio_item.id %>">
+    <a href='<%= portfolio_show_path(portfolio_item) %>'>
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
+    </a>
+    <p class="card-text">
+      <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
+    </p>
+  </div>
+</div>

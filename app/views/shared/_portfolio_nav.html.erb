@@ -1,0 +1,26 @@
+<div class="collapse bg-inverse" id="navbarHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 py-4">
+        <h4 class="text-white">About</h4>
+        <p class="text-muted">In this portfolio I've listed some of my favorite projects that I've built through the years. These application capture a wide range of the applications that love to develop, including: web and mobile applications, enterprise projects, machine learning projects, and tools used by millions of users each day.</p>
+      </div>
+      <div class="col-sm-4 py-4">
+        <h4 class="text-white">Explore</h4>
+        <ul class="list-unstyled">
+          <%= nav_helper 'text-white', 'li' %>
+          <li><%= login_helper 'text-white' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar navbar-inverse bg-inverse">
+  <div class="container d-flex justify-content-between">
+    <%= link_to "Jordan Hudgens", root_path, class: 'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</div>

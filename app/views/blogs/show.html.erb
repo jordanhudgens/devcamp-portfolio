@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div class="col-sm-8 blog-main">
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <h2><%= @blog.title %></h2>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+  <%= render 'blog_breadcrumb' %>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+  <div class="blog-body">
+    <%= markdown @blog.body %>
+  </div>
+
+  <%= render 'comments/comment_form' %>
+
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
+</div>

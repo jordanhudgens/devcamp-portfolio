@@ -1,8 +1,9 @@
-<h1>Homepage</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Blog Posts</h1>
-<%= @posts.inspect %>
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
+<div class="inner cover">
+  <h1 class="cover-heading">Welcome to my online home.</h1>
+  <p class="lead">
+    <span class="element"></span>
+  </p>
+  <p class="lead">
+    <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
+  </p>
+</div>

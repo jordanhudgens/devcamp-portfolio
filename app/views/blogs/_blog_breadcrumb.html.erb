@@ -1,0 +1,11 @@
+  <nav class="breadcrumb">
+    <%= link_to "Home", root_path, class: 'breadcrumb-item' %>
+    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
+
+    <span class="breadcrumb-item active"><%= @blog.title %></span>
+
+    <span class="pull-right">
+      <%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('trash'), @blog, method: :delete, data: { confirm: 'Are you sure you want to delete this post' } if logged_in?(:site_admin) %>
+    </span>
+  </nav>
