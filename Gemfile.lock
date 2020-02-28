@@ -169,7 +169,7 @@ GEM
       byebug (~> 9.0)
       pry (~> 0.10)
     public_suffix (2.0.5)
-    puma (3.6.2)
+    puma (3.12.3)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -286,7 +286,7 @@ DEPENDENCIES
   petergate (~> 1.7)
   pg (~> 0.18)
   pry-byebug
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.1)
   redcarpet (~> 3.4)
   redis (~> 3.3, >= 3.3.3)
