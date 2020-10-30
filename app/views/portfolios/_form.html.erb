@@ -1,6 +1,6 @@
-<%= form_for(@portfolio_item) do |f| %>
-  <% if @portfolio_item.errors.any? %>
-    <% @portfolio_item.errors.full_messages.each do |error| %>
+<%= form_for(portfolio_item) do |f| %>
+  <% if portfolio_item.errors.any? %>
+    <% portfolio_item.errors.full_messages.each do |error| %>
       <%= alert_generator error %>
     <% end %>
   <% end %>
